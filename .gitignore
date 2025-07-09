@@ -1,1 +1,3 @@
 .venv
+rag-agent-gemma\app\__pycache__
+test.py

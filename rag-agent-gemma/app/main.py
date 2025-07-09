@@ -11,7 +11,7 @@ def home():
     }
 
 @app.post("/upload")
-async def upload_document(file:UploadFile = File()):
+async def upload_document(file:UploadFile = File("C:\\Users\\Ankit Maurya\\Downloads\\Sugandha\\UiPath Study Material\\UiPath Whitepaper.pdf")):
     content = await file.read()
     doc_path = f"data/{file.filename}"
     with open(doc_path,"wb") as f:
