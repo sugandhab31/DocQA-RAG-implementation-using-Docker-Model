@@ -8,5 +8,5 @@ def parse_document(file_path) -> str:
         text = page.extract_text()
         if text:
             cleaned = " ".join(text.split())
-            all_text.append()
+            all_text.append(cleaned)
     return " ".join(all_text)

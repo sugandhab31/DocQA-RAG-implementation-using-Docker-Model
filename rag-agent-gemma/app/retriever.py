@@ -9,7 +9,7 @@ model = SentenceTransformer("all-MiniLM-L6-v2")
 FAISS_INDEX_PATH = "vectorstore/faiss_index.index"
 CHUNKS_PATH = "vectorstore/chunks.pkl"
 
-def skill_text(text: str, chunk_size: int = 500) -> List[str]:
+def split_text(text: str, chunk_size: int = 500) -> List[str]:
     chunks = []
     words = text.split()
     for i in range(0, len(words), chunk_size):
